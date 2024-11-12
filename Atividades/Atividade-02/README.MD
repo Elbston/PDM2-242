@@ -6,3 +6,4 @@
 4. Criar uma lista de Funcionarios
 5. criar um objeto Equipe Projeto chamando o metodo contrutor que da nome ao projeto e insere uma coleção de funcionario 
 6. Printar no formato JSON o objeto Equipe Projeto.
+# Saida:
