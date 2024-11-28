@@ -70,10 +70,12 @@ void main() async {
   final db = AlunoDatabase.instance;
 
   // Inserir dois alunos
-  final aluno1 = Aluno(id: 0, nome: 'João', dataNascimento: '2000-01-01');
-  final aluno2 = Aluno(id: 0, nome: 'Maria', dataNascimento: '2001-02-02');
+  final aluno1 = Aluno(id: 0, nome: 'Elbston', dataNascimento: '2006-27-04');
+  final aluno2 = Aluno(id: 0, nome: 'Enzo', dataNascimento: '2007-31-01');
+  final aluno3 = Aluno(id: 0, nome: 'Lucas', dataNascimento: '2007-05-03');
   await db.insertAluno(aluno1);
   await db.insertAluno(aluno2);
+  await db.insertAluno(aluno3);
 
   // Buscar todos os alunos
   List<Aluno> alunos = await db.getAllAlunos();
@@ -85,8 +87,10 @@ void main() async {
   }
 
   // Atualizar o nome de um aluno
-  aluno1.nome = 'João da Silva';
+  aluno1.nome = 'Elbston Souza Lima Filho';
   await db.updateAluno(aluno1);
+  aluno3.nome = 'Lucas Gonzaga de Andrade';
+  await db.updateAluno(aluno3);
 
   // Deletar o aluno2
   await db.deleteAluno(aluno2.id);
