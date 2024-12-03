@@ -1,0 +1,9 @@
+name: Atv05
+description: Um exemplo de envio de email com Dart usando o pacote mailer
+version: 1.0.0
+
+environment:
+  sdk: ">=2.19.0 <3.0.0" # Certifique-se de que está de acordo com sua versão do Dart
+
+dependencies:
+  mailer: ^6.2.0
